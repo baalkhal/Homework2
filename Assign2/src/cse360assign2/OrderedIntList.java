@@ -7,8 +7,8 @@
 
 package cse360assign2;
 public class OrderedIntList {
-	private int[] intList;  
-	private int count; 
+	protected int[] intList;  
+	protected int count; 
 	OrderedIntList (){
 		
 			intList = new int[10];
