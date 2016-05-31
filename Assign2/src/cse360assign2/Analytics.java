@@ -3,6 +3,11 @@ package cse360assign2;
 import java.util.Arrays;
 
 public class Analytics extends OrderedIntList {
+
+	 /**
+	  * this method takes a list of numbers 
+	  * @return the mean
+	  */
 	public double mean(){
 		
 		    double mean = 0;
@@ -18,7 +23,10 @@ public class Analytics extends OrderedIntList {
 		    }
 		    return mean ;
 		}
-	
+	 /**
+	  * this method takes a list of numbers 
+	  * @return median
+	  */
 	public int median(){
 		Arrays.sort(intList);
 		int median = 0;
@@ -26,15 +34,15 @@ public class Analytics extends OrderedIntList {
 			median = -1;
 		
 		else{
-		if (intList.length % 2 == 0)
-		    median = (intList[count/2]) + (intList[count/2 - 1]);
-		
-		else
-		    median =  intList[count/2];}
-		 
+		median = intList[0]+ intList[intList.length-1]/2;
+		}
 		    
 		    return median ;
 		}
+	 /**
+	  * this method takes a list of numbers 
+	  * @return the highest number
+	  */
 	
 	public int high(){
 		int high = 0;
@@ -49,6 +57,11 @@ public class Analytics extends OrderedIntList {
 				}}
 			return high;
 		}
+	/**
+	  * this method takes a list of numbers 
+	  * @return the lowest number
+	  */
+	
 	public int low() {
 			Arrays.sort(intList);
 			int low = 0;
@@ -60,6 +73,11 @@ public class Analytics extends OrderedIntList {
 			
 			return low;
 		}
+	
+	/**
+	  * this method takes a list of numbers 
+	  * @return how many numbers in the list
+	  */
 	public int numInts(){
 		return count;
 	}
